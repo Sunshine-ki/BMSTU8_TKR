@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.040" timestamp="2022-04-25T02:21:20.756478" hostname="Lispad"><testcase classname="tests.test_font" name="test_existing_base_font" time="0.000" /></testsuite></testsuites>

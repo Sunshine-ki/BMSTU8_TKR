@@ -1,0 +1,17 @@
+image: python:3.8
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: Test
+          caches:
+            - pip
+          script:
+            - pip install -r tests/requirements.txt
+            - pytest tests/* --junitxml=test-reports/report.xml
+      - step:
+          name: Lint code
+          script:
+            - pip install -r requirements.txt
+            - python FontCreation/model/fontModel.py
